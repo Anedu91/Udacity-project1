@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  position: relative;
+  margin-top: 2rem;
+  @media only screen and (min-width: $bp-sm) {
+    flex-wrap: nowrap;
+    margin-top: 0;
+  }
+  &__input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.33);
+  }
+  &__label {
+    position: absolute;
+    top: -2rem;
+    left: 0;
+  }
+  &__btn {
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+    background: $secondary-color;
+    border: none;
+    color: $gray-1-color;
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.33);
+    cursor: pointer;
+    width: 100%;
+    @media only screen and (min-width: $bp-sm) {
+      width: auto;
+      margin-left: 2rem;
+      margin-top: 0;
+    }
+  }
+}

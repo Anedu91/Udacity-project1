@@ -1,0 +1,53 @@
+.blog {
+  display: grid;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas:
+    "head head head head head head head head"
+    "main main main main main main main main"
+    "banner banner banner banner banner banner banner banner"
+    "footer footer footer footer footer footer footer footer";
+  &__header {
+    grid-area: head;
+  }
+  &__hero {
+    height: 100vh;
+    padding: 3rem;
+    background-image: linear-gradient(
+        to bottom,
+        rgba($gray-1-color, 0.8),
+        rgba($gray-1-color, 0.8)
+      ),
+      url(../images/hero_bg.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: $white-color;
+  }
+  &__heading {
+    margin-top: auto;
+  }
+  &__btn {
+    margin-top: auto;
+    box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.33);
+  }
+
+  &__main {
+    grid-area: main;
+    color: $white-color;
+    padding: 5rem 5rem;
+    background-image: linear-gradient(
+      to bottom,
+      rgba($gray-1-color, 0.7),
+      rgba($gray-1-color, 0.7)
+    );
+    position: relative;
+    @media only screen and (min-width: $bp-sm) {
+      padding: 10rem 5rem;
+    }
+  }
+}

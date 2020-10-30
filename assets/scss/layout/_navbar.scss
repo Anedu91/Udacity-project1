@@ -1,0 +1,22 @@
+.navbar {
+  position: absolute;
+  padding: 1rem 3rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  &__icon {
+    fill: $white-color;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &--article {
+    background: $gray-1-color;
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -1,0 +1,9 @@
+.logo {
+  max-width: 150px;
+  @media only screen and (min-width: $bp-sm) {
+    max-width: 300px;
+  }
+  &--article {
+    max-width: 130px;
+  }
+}

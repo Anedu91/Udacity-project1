@@ -1,0 +1,38 @@
+.footer {
+  grid-area: footer;
+  color: $white-color;
+  background: $gray-1-color;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__nav {
+    margin-top: 1rem;
+    display: flex;
+    list-style: none;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $white-color;
+  }
+  &__paragraph {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  &__icon {
+    max-width: 2rem;
+    max-height: 2rem;
+    fill: currentColor;
+    transition: 0.5s all;
+    &:hover {
+      fill: $primary-color;
+    }
+  }
+}

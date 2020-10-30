@@ -1,0 +1,20 @@
+.banner {
+  grid-area: banner;
+  padding: 1rem;
+  background: $primary-color;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  grid-column-gap: 3rem;
+  @media only screen and (min-width: $bp-sm) {
+    padding: 5rem;
+  }
+  @media only screen and (min-width: $bp-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__title {
+    color: $gray-1-color;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
